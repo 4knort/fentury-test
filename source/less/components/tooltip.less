@@ -1,0 +1,42 @@
+.tooltip{
+  background-color: #5a5d79;
+  color: #fff;
+  position: absolute;
+  top: -125px;
+  left: 85px;
+  width: 220px;
+  mix-height: 140px;
+  z-index: 500;
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding: 15px 20px;
+  font-weight: 400;
+  display: none;
+  &:after{
+    content: "";
+    position: absolute;
+    bottom: -13px;
+    left: 14px;
+    border: 13px solid transparent;
+    border-bottom-color: #5a5d79;
+    transform: rotate(-45deg);
+  }
+  &__title{
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 22px;
+    line-height: 22px;
+    font-weight: 400;
+  }
+  &__text{
+    margin: 0;
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+
+@media (max-width: @mobile){
+  .tooltip{
+    display: none !important;
+  }
+}

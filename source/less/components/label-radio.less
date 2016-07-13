@@ -1,0 +1,38 @@
+.label-radio{
+  display: block;
+  padding: 28px 0;
+  box-sizing: border-box;
+  width: 150px;
+  min-height: 210px;
+  border-radius: 10px;
+  font-size: 22px;
+  line-height: 22px;
+  text-align: center;
+  margin-right: 30px;
+  cursor: pointer;
+  &:hover{
+    box-shadow: 0 0 18px #5eac83;
+  }
+  &:active{
+    box-shadow: 0 0 18px darken( #5eac83, 10%);
+  }
+  &:last-child{
+    margin-right: 0;
+  }
+  &__text{
+    display: block;
+    &--number{
+      font-size: 28px;
+      line-height: 28px;
+      margin-bottom: 26px;
+    }
+  }
+}
+
+.form__radio:checked + .label-radio{
+  box-shadow: 0 0 18px #5eac83;
+}
+
+.label-radio:hover + .tooltip{
+  display: block;
+}

@@ -1,17 +1,18 @@
 body{
-  font-family: "x";
-  font-size: 1 px;
-  line-height: 1 px;
-  min-width: 1 px;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 22px;
+  line-height: 18px;
+  min-width: 320px;
   margin: 0;
   padding: 0;
   background-color: #fff;
+  color: #a9abbd;
 }
 
 .container{
-  max-width: 1px;
+  max-width: 570px;
   margin: 0 auto;
-  padding: 0 1px;
+  padding: 0 15px;
 }
 
 a{
@@ -21,7 +22,7 @@ a{
 
 a:hover{
   text-decoration: none;
-  color: #E5493A;
+  color: #e5493a;
 }
 
 img{
@@ -57,31 +58,46 @@ h6{
 }
 //place holder style
 ::-webkit-input-placeholder{
-  color: #426b95;
+  color: #a9abbd;
 }
 ::-moz-placeholder{
-  color: #426b95;
+  color: #a9abbd;
 }/* Firefox 19+ */
 :-moz-placeholder{
-  color: #426b95;
+  color: #a9abbd;
 }/* Firefox 18- */
 :-ms-input-placeholder{
-  color: #426b95;
+  color: #a9abbd;
 }
 .show{
   display: block;
 }
 
 input{
-  font-family: "x";
+  font-family: "Open Sans", Arial, sans-serif;
   outline: none;
-  padding: 0;
+  padding: 16px 20px;
   border: none;
   font-weight: normal;
-  font-size: 1px;
+  font-size: 18px;
 }
 
 textarea{
   outline: none;
   border: none;
+}
+.to-right{
+  .to-right();
+}
+.to-left{
+  .to-left();
+}
+.clearfix:after{
+  .clearfix();
+}
+
+@media(max-width: @mobile){
+  .container{
+    padding: 0;
+  }
 }
